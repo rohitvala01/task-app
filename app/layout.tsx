@@ -3,7 +3,7 @@ import { Metadata } from 'next';
 
 export const metadata = {
   title: 'Rohit Task App',
-  description: 'My Custom Task App'
+  description: 'Interview Project Task App'
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
