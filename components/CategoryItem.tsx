@@ -46,7 +46,8 @@ export const CategoryItem: React.FC<CategoryItemProps> = ({
       }}
       onClick={() => onClick(category.id)}
       
-      /* ✅ DRAG UI ADDED HERE */
+      /* DRAG CATEGORY HERE */
+
       className="group relative flex items-center justify-between p-4 mb-2 
       rounded-2xl bg-white/5 hover:bg-white/10 transition-all duration-300
       border border-transparent hover:border-white/10 overflow-hidden
