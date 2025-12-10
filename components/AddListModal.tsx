@@ -1,8 +1,5 @@
 
 
-
-
-
 'use client';
 
 import React, { useState } from 'react';
@@ -27,6 +24,7 @@ export const AddListModal: React.FC<AddListModalProps> = ({ onClose, onAdd }) =>
   const availableIcons = Object.keys(IconMap).filter((k) => k !== 'default');
 
   return (
+
     <motion.div
       className="fixed inset-0 z-[999] flex items-center justify-center p-4"
       initial={{ opacity: 0 }}
@@ -69,6 +67,7 @@ export const AddListModal: React.FC<AddListModalProps> = ({ onClose, onAdd }) =>
         <div className="absolute -bottom-10 -left-10 w-32 h-32 bg-blue-500/20 blur-3xl rounded-full" />
 
         <div className="relative z-10">
+
           {/* HEADER */}
           <div className="flex justify-between items-center mb-6">
             <h2 className="text-lg font-semibold text-white">New List</h2>
@@ -80,9 +79,10 @@ export const AddListModal: React.FC<AddListModalProps> = ({ onClose, onAdd }) =>
             </button>
           </div>
 
-          {/* FORM */}
+          {/* FORM SECTION*/}
           <form onSubmit={handleSubmit} className="space-y-6">
-            {/* INPUT */}
+
+            {/* INPUT SECTION*/}
             <div>
               <input
                 autoFocus
@@ -120,7 +120,7 @@ export const AddListModal: React.FC<AddListModalProps> = ({ onClose, onAdd }) =>
               </div>
             </div>
 
-            {/* SUBMIT */}
+            {/* SUBMIT SECTOR*/}
             <motion.button
               type="submit"
               disabled={!name.trim()}
